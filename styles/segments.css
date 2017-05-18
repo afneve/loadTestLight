@@ -1,0 +1,278 @@
+.segment_container {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+.county_name a {
+    text-decoration: none !important;
+    color: #0077d4 !important;
+}
+
+#segment_filter_container{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+    width: 30%;
+    background: #eee;
+    float: left;
+    box-sizing: border-box;
+}
+
+.terminus_container{
+    margin: 10px 0;
+}
+#segment_filter{
+    background: #eee;
+    box-sizing: border-box;
+}
+
+#segment_filter .selected {
+    background: white !important;          
+}
+
+#segment_filter .complete {
+    background: #fce037;          
+}
+
+#segment_filter ul{
+    list-style: none;
+    padding: 0;
+}
+
+#segment_filter > ul > li > a {
+    font-size: 14px;
+    display:block;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+#segment_filter_container select{
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px 0;
+    font-family: 'Oxygen', sans-serif;
+    color: #666;
+}
+
+/*
+Styles for list of segments
+*/
+#segment_list {
+    float: left;
+    width: 70%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.segment_name{
+    text-align:left;
+}
+
+.segment_summary{
+    margin-bottom: 20px;
+}
+
+.segment_details{
+    text-transform: capitalize;
+}
+
+.segment {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+.segment_details{
+    position: relative;
+}
+
+.segment_details span{
+    position: relative;
+}
+
+#segment_filter_container select{
+    display: none;
+}
+
+.yes:after{
+    content: "";
+    border: 3px solid #017927;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    right: -20px;
+    border-left: none;
+    border-top: none;
+    transform: rotate(38deg);
+    cursor: pointer;
+}
+
+.no:before {
+    width: 3px;
+    height: 16px;
+    background: #C50401;
+    content: "";
+    display: inline-block;
+    right: -20px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.no:after {
+    width: 3px;
+    height: 16px;
+    background: #C50401;
+    content: "";
+    display: inline-block;
+    right: -20px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.nohiking{
+    margin: 15px 0 5px;
+}
+
+
+.segment_info {
+    width: 50%;
+    display:inline-block;
+}
+
+#segment_list a{
+    color: #236B8E;
+}
+a.location{
+    color: #236B8E;
+    display: block;
+    clear: both;
+}
+
+.easy{
+    color: #017927;
+}
+.difficult{
+    color: #C50401;
+}
+
+.user_segments_view{
+    margin-bottom: 15px;
+}
+
+.county h3 {
+    margin: 0 0 5px;
+}
+
+
+.segment_name{
+    font-weight: bold;
+}
+
+.secondary_location{
+    margin-top: 10px;
+}
+
+
+.badge{
+    display:inline-block;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.badge img, .badge svg{
+    width: 125px;
+}
+
+#segment_list .badge[data-complete="E"] path.fill, #segment_list .badge[data-partial="E"] path.fill, #segment_list .badge[data-complete="E"] polygon.fill, #segment_list .badge[data-partial="E"] polygon.fill{
+    fill: #790301 !important;
+}
+
+#segment_list .badge[data-complete="E"] path.stroke, #segment_list .badge[data-partial="E"] path.stroke, #segment_list .badge[data-complete="E"] polygon.stroke, #segment_list .badge[data-partial="E"] polygon.stroke{
+    stroke: #790301 !important;
+}
+
+#segment_list .county.complete .badge svg path.fill, #segment_list .county.complete .badge svg polygon.fill{
+    fill: #fce037 !important;
+}
+#segment_list .county.complete .badge svg path.stroke, #segment_list .county.complete .badge svg polygon.stroke{
+    stroke: #fce037 !important;
+}
+span.badge_label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 36%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.location_based_info {
+    margin: 16px 0;
+}
+
+#ice_age_overlay{
+    padding: 20px;
+    width: 60%;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: black;
+    font-size: 18px;
+    z-index: 50;
+    background-color: white;
+}
+
+#overlay_screen{
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+}
+.overlay_heading{
+    text-align: left;
+    text-transform: capitalize;
+}
+@media (max-width: 1000px) {
+    .badge img, .badge svg{
+        width: 75%;
+    }
+    span.badge_label {
+        font-size: 22px;
+    }
+}
+@media (max-width: 600px) {
+    #segment_filter_container{
+        background: white;
+        width: 100%;
+    }
+    #segment_filter{
+        width: 100%;
+        display:none;
+    }
+    #segment_list{
+        width: 100%;
+    }
+    #segment_filter_container select{
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .segment_info {
+        width: 100%;
+    }
+    .user_badge_container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+}

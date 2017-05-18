@@ -1,0 +1,290 @@
+body {
+    background: #fff;
+    color: #666;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+}
+h2{
+	color: #0077d4;
+    text-align:center;
+}
+h4{
+    margin: 0 0 10px;
+    text-align: center;
+}
+.user_container h4{
+    font-size:22px;
+}
+
+.clear{
+    clear: both;
+}
+
+.hide{
+    display:none;
+}
+
+#ice_age{
+	padding: 60px 20px 0;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    background: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    z-index: 10;
+}
+#nav .selected{
+    background: #afeeee;
+}
+.nav_item {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+a.location{
+    color: #236B8E;
+    display: block;
+    clear: both;
+}
+
+.easy{
+    color: #017927;
+}
+.hard{
+    color: #C50401;
+}
+
+.user_segment_container{
+    margin-bottom: 15px;
+}
+
+.county h3 {
+    margin-top: 0;
+}
+.user_container {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 10px 5px 20px;
+    box-sizing:border-box;
+}
+#progress_container h4{
+    text-align: left;
+}
+.seg{
+    font-weight: bold;
+}
+.user_segments {
+    margin-top: 25px;
+}
+.user_header {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.segment_details{
+    cursor: pointer;
+    position: relative;
+}
+
+.segment_details span{
+    position: relative;
+}
+
+.yes:after{
+    content: "";
+    border: 3px solid #017927;
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    right: -20px;
+    border-left: none;
+    border-top: none;
+    transform: rotate(38deg);
+}
+
+.no:before {
+    width: 3px;
+    height: 16px;
+    background: #C50401;
+    content: "";
+    display: inline-block;
+    right: -20px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.no:after {
+    width: 3px;
+    height: 16px;
+    background: #C50401;
+    content: "";
+    display: inline-block;
+    right: -20px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+[data-notes]{
+	cursor: pointer;
+}
+
+#segment_filter{
+    background: #eee;
+    box-sizing: border-box;
+}
+
+#segment_filter_container{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+    width: 30%;
+    background: #eee;
+    float: left;
+    box-sizing: border-box;
+}
+
+#segment_list {
+    float: left;
+    width: 70%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#segment_filter a{
+    font-size:10px;
+    color: black;
+}
+
+#segment_filter>ul>li.selected {
+    background: white;          
+}
+
+#segment_filter>ul>li>a {
+    font-size: 14px;
+    display:block;
+    padding: 8px;
+}
+
+#segment_filter ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#segment_filter ul ul{
+    padding-left: 10px;
+}
+
+#segment_filter ul ul li{
+    line-height: 12px;
+}
+
+
+#segment_filter select{
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px 0;
+    font-family: 'Oxygen', sans-serif;
+    color: #666;
+}
+
+.segment_name{
+    text-align:left;
+}
+
+.segment_summary{
+    margin-bottom: 20px;
+}
+
+.segment_details{
+    text-transform: capitalize;
+}
+
+.segment {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+.nohiking{
+    margin: 15px 0 5px;
+}
+
+
+.segment_container {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+#footnote {
+    width: 100%;
+    position: fixed;
+    bottom: -100px;
+    background: white;
+    border: 3px solid #0077d4;
+    transition: bottom 1s ease-out;
+    box-sizing: border-box;
+    padding: 15px;
+    left: 0;
+    border-bottom: none;
+}
+.segment_info, .user_badge_container {
+    width: 50%;
+    display:inline-block;
+}
+select{
+    display: none;
+}
+.badge{
+    display:inline-block;
+    width:50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.badge img{
+    width: 50px;
+}
+span.badge_label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: 23%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+@media (max-width: 600px) {
+    #segment_filter{
+        width: 100%;
+        display:none;
+    }
+    #segment_list{
+        width: 100%;
+    }
+    .user_container {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+    select{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .segment_info {
+    width: 100%;
+}
+}

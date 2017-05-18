@@ -1,0 +1,50 @@
+.user_container {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 0 10px 35px;
+    box-sizing:border-box;
+}
+
+.user_segment_container{
+    margin-bottom: 15px;
+}
+#progress_view h4{
+    text-align: left;
+}
+
+.user_segments {
+    margin: 0 0 35px;
+}
+.user_header {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.user_container span.completion_data {
+    font-weight: normal;
+	font-size: 14px; 
+}
+
+.user_badge_container {
+    width: 50%;
+    display:inline-block;
+}
+
+.user_container h4{
+    font-size:22px;
+}
+
+.user_miles_remaining{
+    color: #0C78C5;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .user_container {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+    }
+}
